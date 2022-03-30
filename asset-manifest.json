@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my-portfolio-react/static/css/main.f6e96870.css",
+    "main.js": "/my-portfolio-react/static/js/main.0981dece.js",
+    "static/media/Profile_Picture.jpg": "/my-portfolio-react/static/media/Profile_Picture.df2c9b7d1c3777a305fc.jpg",
+    "static/media/LeetCode_logo_black.png": "/my-portfolio-react/static/media/LeetCode_logo_black.c79f333b12595d3eec8f.png",
+    "static/media/HackerRank_logo.png": "/my-portfolio-react/static/media/HackerRank_logo.c5bede0098e3bf3a222e.png",
+    "index.html": "/my-portfolio-react/index.html",
+    "main.f6e96870.css.map": "/my-portfolio-react/static/css/main.f6e96870.css.map",
+    "main.0981dece.js.map": "/my-portfolio-react/static/js/main.0981dece.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6e96870.css",
+    "static/js/main.0981dece.js"
+  ]
+}
