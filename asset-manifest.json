@@ -1,16 +1,22 @@
 {
   "files": {
     "main.css": "/my-portfolio-react/static/css/main.f6e96870.css",
-    "main.js": "/my-portfolio-react/static/js/main.0981dece.js",
+    "main.js": "/my-portfolio-react/static/js/main.084192f2.js",
+    "static/media/PersonPortfolio.png": "/my-portfolio-react/static/media/PersonPortfolio.c959f3fead669da40f54.png",
+    "static/media/wordSearcg.png": "/my-portfolio-react/static/media/wordSearcg.76da429fedbb9e6ea93e.png",
+    "static/media/spiralMatrix.jpeg": "/my-portfolio-react/static/media/spiralMatrix.dac88d15052b7da1b643.jpeg",
+    "static/media/kmeans.png": "/my-portfolio-react/static/media/kmeans.f8f111a55ca3e6a94d55.png",
+    "static/media/phishing-detection.jpeg": "/my-portfolio-react/static/media/phishing-detection.61ae27a0c65a72d0d94d.jpeg",
     "static/media/Profile_Picture.jpg": "/my-portfolio-react/static/media/Profile_Picture.df2c9b7d1c3777a305fc.jpg",
     "static/media/LeetCode_logo_black.png": "/my-portfolio-react/static/media/LeetCode_logo_black.c79f333b12595d3eec8f.png",
+    "static/media/MapReduce.png": "/my-portfolio-react/static/media/MapReduce.29c2ba857e33891a70ae.png",
     "static/media/HackerRank_logo.png": "/my-portfolio-react/static/media/HackerRank_logo.c5bede0098e3bf3a222e.png",
     "index.html": "/my-portfolio-react/index.html",
     "main.f6e96870.css.map": "/my-portfolio-react/static/css/main.f6e96870.css.map",
-    "main.0981dece.js.map": "/my-portfolio-react/static/js/main.0981dece.js.map"
+    "main.084192f2.js.map": "/my-portfolio-react/static/js/main.084192f2.js.map"
   },
   "entrypoints": [
     "static/css/main.f6e96870.css",
-    "static/js/main.0981dece.js"
+    "static/js/main.084192f2.js"
   ]
 }
