@@ -43,7 +43,7 @@ function App() {
                 </motion.a>
                 <motion.a
                 whileTap={{ scale: 0.85 }}
-                 href='https://drive.google.com/file/d/1Bd8g1sxVZ6AKHnb82OVu9Pvv6y45vpjA/view?usp=sharing' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 ease-in-out'
+                 href='https://drive.google.com/file/d/1Bd8g1sxVZ6AKHnb82OVu9Pvv6y45vpjA/view?usp=sharing' className="ml-auto text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100 ease-in"
                 onClick={() => setIsActive(false)}>
                   Download
                 </motion.a>
@@ -122,7 +122,7 @@ function App() {
             </div>
             <div className="w-full h-420 flex flex-col items-center justify-center ">
               <p className="text-lg text-textBase text-center">
-                TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+                Hello, I'm Vishnu Rahul. I'm a Graduate Student at the University of Illinois at Chicago pursuing a Masters in Management Information Systems. 
               </p>
 
               <motion.button 
@@ -153,6 +153,9 @@ function App() {
                     <h3 className="vertical-timeline-element-title">{n.title}</h3>
                     <h4 className="vertical-timeline-element-subtitle">{n.location}</h4>
                     <p>
+                      {n.grade}
+                    </p>
+                    <p>
                       {n.description}
                     </p>
                   </VerticalTimelineElement>
@@ -162,13 +165,22 @@ function App() {
             </VerticalTimeline>
           </section>
           {/* Project Section */}
-          <section className='flex flex-wrap items-center justify-evenly my-24 gap-4' id="projects">
+          <section
+            className="flex flex-wrap items-center justify-evenly my-24 gap-4"
+            id="projects"
+          >
             {Projects && Projects.map(n => (
-              <div key ={n.id} className='border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
-              <p className='textmd text-textBase font-medium uppercase'>
-                {n.name.length > 25? `${n.name.substring(0,25)}...` : n.name}
-              </p>
-                <img src={n.imageSrc} alt='' className='w-full h-full object-cover rounded-md my-4'/>
+              <div key ={n.id} 
+              className="border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
+              >
+                <p className="text-lg text-textBase font-medium uppercase">
+                    {n.name.length > 25 ? `${n.name.slice(0, 25)}...` : n.name}
+                  </p>
+              <img
+                    src={n.imageSrc}
+                    className="w-full h-full object-cover rounded-md my-4"
+                    alt=""
+                  />
                 <div className='flex flex-1 items-center justify-between'>
                   <p className='text-lg text-gray-300'> Technologies Used
                   <span className='block text-sm to-gray-500'> {n.techs} </span>
