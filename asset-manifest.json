@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio-react/static/css/main.09814292.css",
-    "main.js": "/my-portfolio-react/static/js/main.52903ae8.js",
+    "main.css": "/my-portfolio-react/static/css/main.c3a743ca.css",
+    "main.js": "/my-portfolio-react/static/js/main.5a721768.js",
     "static/media/PersonPortfolio.png": "/my-portfolio-react/static/media/PersonPortfolio.c959f3fead669da40f54.png",
     "static/media/wordSearcg.png": "/my-portfolio-react/static/media/wordSearcg.76da429fedbb9e6ea93e.png",
     "static/media/spiralMatrix.jpeg": "/my-portfolio-react/static/media/spiralMatrix.dac88d15052b7da1b643.jpeg",
@@ -12,11 +12,11 @@
     "static/media/MapReduce.png": "/my-portfolio-react/static/media/MapReduce.29c2ba857e33891a70ae.png",
     "static/media/HackerRank_logo.png": "/my-portfolio-react/static/media/HackerRank_logo.c5bede0098e3bf3a222e.png",
     "index.html": "/my-portfolio-react/index.html",
-    "main.09814292.css.map": "/my-portfolio-react/static/css/main.09814292.css.map",
-    "main.52903ae8.js.map": "/my-portfolio-react/static/js/main.52903ae8.js.map"
+    "main.c3a743ca.css.map": "/my-portfolio-react/static/css/main.c3a743ca.css.map",
+    "main.5a721768.js.map": "/my-portfolio-react/static/js/main.5a721768.js.map"
   },
   "entrypoints": [
-    "static/css/main.09814292.css",
-    "static/js/main.52903ae8.js"
+    "static/css/main.c3a743ca.css",
+    "static/js/main.5a721768.js"
   ]
 }
