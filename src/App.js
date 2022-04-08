@@ -8,7 +8,6 @@ import { Experience, Projects, SocialMediaLinks } from './data';
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect } from 'react';
 
-
 function App() {
   const [isActive, setIsActive] = useState(false);
   useEffect(() => {
@@ -132,9 +131,9 @@ function App() {
             </div>
             <div className="w-full h-420 flex flex-col items-center justify-center ">
               <p className="text-lg text-textBase text-center">
-                Hello, I'm Vishnu Rahul. I'm a Graduate Student at the University of Illinois at Chicago pursuing a Masters in Management Information Systems. 
+                Hello, I'm Vishnu Rahul. I'm a Graduate Student at the University of Illinois at Chicago pursuing a Masters in Management Information Systems. <br/> <br/>Home is where the heart is!
               </p>
-
+              <iframe width="450" height="215" className='p-2' src="https://www.youtube.com/embed/eEr56MfFP6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <motion.button 
               whileTap={{ scale: 0.855 }}
               type="button"
