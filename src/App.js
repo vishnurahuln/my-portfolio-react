@@ -6,10 +6,24 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import { Experience, Projects, SocialMediaLinks } from './data';
 import { motion, AnimatePresence } from "framer-motion"
+import { useEffect } from 'react';
 
 
 function App() {
   const [isActive, setIsActive] = useState(false);
+  useEffect(() => {
+    const threeScript = document.createElement('script');
+    threeScript.setAttribute("id", "threeScript");
+    threeScript.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js");
+    document.getElementsByTagName('head')[0].appendChild(threeScript);
+    return () => {
+      if(threeScript) {
+        threeScript.remove();
+      }
+    };
+  }, []);
+
+  
   return (
     <AnimatePresence initial={false}>
     <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
@@ -49,49 +63,45 @@ function App() {
                 </motion.a>
           </div>
           <motion.div 
-          whileTap={{ scale: 0.5 }}
+          whileTap={{ scale: 0.6 }}
           className='block md:hidden ml-auto cursor-pointer'
           onClick={() => setIsActive(!isActive)}>
             <IoMenu className='text-2xl text-textBase'/>
           </motion.div>
           {
             isActive && (
-              <motion.div 
-              initial ={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1.1 }}
-              exit={{ opacity: 0, scale: 0.5 }}
-              transition={{ delay: 0.5, type: 'spring' }}
-              className='p-4 w-275 bg-navBar rounded-1g fixed top-24 right-16 flex flex-col items-center justify-evenly gap-6'>
-                <motion.a
-                whileTap={{ scale: 0.85 }}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.2 }}
+                animate={{ opacity: 1, scale: 1.1 }}
+                exit={{ opacity: 0, scale: 0.2 }}
+                transition={{ delay: 0.05, type: "spring" }}
+                className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex flex-col items-center justify-evenly gap-6"
+              >
+                <a
                  href='#home' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'
                 onClick={() => setIsActive(false)}>
                 Home
-                </motion.a>
-                <motion.a
-                whileTap={{ scale: 0.85 }}
+                </a>
+                <a
                  href='#about' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'
                 onClick={() => setIsActive(false)}>
                   About
-                </motion.a>
-                <motion.a
-                whileTap={{ scale: 0.85 }}
+                </a>
+                <a
                  href='#projects' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'
                 onClick={() => setIsActive(false)}>
                   Projects
-                </motion.a>
-                <motion.a
-                whileTap={{ scale: 0.85 }}
+                </a>
+                <a
                  href='#contact' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'
                 onClick={() => setIsActive(false)}>
                   Contact
-                </motion.a>
-                <motion.a
-                whileTap={{ scale: 0.85 }}
+                </a>
+                <a
                  href='https://drive.google.com/file/d/1Bd8g1sxVZ6AKHnb82OVu9Pvv6y45vpjA/view?usp=sharing' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border border-textBase px-2 py-1 rounded-xl hover:border-gray-100 ease-in-out'
                 onClick={() => setIsActive(false)}>
                   Download
-                </motion.a>
+                </a>
               </motion.div>
             )
           }
