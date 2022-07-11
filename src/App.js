@@ -61,19 +61,19 @@ function App() {
                   Download
                 </motion.a>
           </div>
-          <motion.div 
-          whileTap={{ scale: 0.6 }}
-          className='block md:hidden ml-auto cursor-pointer'
-          onClick={() => setIsActive(!isActive)}>
-            <IoMenu className='text-2xl text-textBase'/>
-          </motion.div>
+          <motion.div // motion div for hamburger menu
+          whileTap={{ scale: 0.6 }} // scale on click
+          className='block md:hidden ml-auto cursor-pointer' // class for hamburger menu
+          onClick={() => setIsActive(!isActive)}> 
+            <IoMenu className='text-2xl text-textBase'/> 
+          </motion.div> 
           {
-            isActive && (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.2 }}
-                animate={{ opacity: 1, scale: 1.1 }}
-                exit={{ opacity: 0, scale: 0.2 }}
-                transition={{ delay: 0.05, type: "spring" }}
+            isActive && ( // if isActive is true
+              <motion.div // motion div for hamburger menu
+                initial={{ opacity: 0, scale: 0.2 }} // initial values
+                animate={{ opacity: 1, scale: 1.1 }} // animate values
+                exit={{ opacity: 0, scale: 0.2 }} // exit values
+                transition={{ delay: 0.05, type: "spring" }} // transition values
                 className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex flex-col items-center justify-evenly gap-6"
               >
                 <a
@@ -133,7 +133,7 @@ function App() {
               <p className="text-lg text-textBase text-center">
                 Hello, I'm Vishnu Rahul. I'm a Graduate Student at the University of Illinois at Chicago pursuing a Masters in Management Information Systems. <br/> <br/>Home is where the heart is!
               </p>
-              <iframe width="450" height="215" className='p-2' src="https://www.youtube.com/embed/eEr56MfFP6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe className='p-2 flex w-full h-60' src="https://www.youtube.com/embed/eEr56MfFP6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <motion.button 
               whileTap={{ scale: 0.855 }}
               type="button"
@@ -149,20 +149,20 @@ function App() {
           <section className="w-full flex items-center justify-center">
             <VerticalTimeline>
               {
-                Experience && Experience.map(n => (
-                  <VerticalTimelineElement key ={n.id}
+                Experience && Experience.map(n => ( // map through experience array
+                  <VerticalTimelineElement key ={n.id} // key for each element
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: 'rgba(21,24,31)', color: '#888' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgba(21,24,31)' }}
-                    date={n.date}
+                    date={n.date} // date
                     iconStyle={{ background: 'rgba(21,24,31)', color: '#888' }}
-                    icon={n.iconSrc}
+                    icon={n.iconSrc} // icon
                   >
                     <h3 className="vertical-timeline-element-title">{n.company}</h3>
                     <h3 className="vertical-timeline-element-title">{n.title}</h3>
                     <h4 className="vertical-timeline-element-subtitle">{n.location}</h4>
                     <p>
-                      {n.grade}
+                      {n.grade} 
                     </p>
                     <p>
                       {n.description}
@@ -178,7 +178,7 @@ function App() {
             className="flex flex-wrap items-center justify-evenly my-24 gap-4"
             id="projects"
           >
-            {Projects && Projects.map(n => (
+            {Projects && Projects.map(n => ( // map through projects array
               <div key ={n.id} 
               className="border border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
               >
